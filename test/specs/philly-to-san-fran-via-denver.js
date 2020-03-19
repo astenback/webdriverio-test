@@ -25,7 +25,7 @@ Google Maps Page Class //TODO: Move into pageobjects folder and import here
 */
 class GoogleMapsPage extends Page {
 
-  // Class selectors
+  // Class selectors for search buttons
   get searchMidpoint() { return $('#searchboxinput')}
   get searchBtn() { return $('#searchbox-searchbutton') }
 
@@ -56,6 +56,7 @@ class GoogleMapsPage extends Page {
     this.drivingDirectionsBtn.click()
   }
 
+  // This works in Chrome, but not Firefox
   submitDestinationSearch() {
     this.destinationSearchBtn.click()
   }
@@ -85,6 +86,11 @@ const expectedGoogleMapsTitle = "Google Maps";
 const expectedRouteTitle = "Philadelphia, Pennsylvania to San Francisco, California - Google Maps";
 const expectedMileage = "2,977 miles";
 const expectedTravelTimeWithoutTraffic = "45 h";
+
+/*
+Misc
+*/
+const enterKey = "\uE007" // Enter key ascii
 
 /*
 Open URL and Check Maps Page Title
@@ -124,10 +130,11 @@ describe('route page', () => {
 
     //
     // After adding support for Firefox, I found it necessary to send unicode for the "Enter" key
-    // as follows when typeing the destination. Works for Chrome too
+    // as follows when typing the destination. Works for Chrome too
     //
     // page.submitDestinationSearch()
-    page.destination.setValue(destination + "\uE007")
+    // page.destination.setValue(destination + "\uE007")
+    page.destination.setValue(destination + enterKey)
 
     page.submitRoute(route)
 

@@ -1,6 +1,12 @@
 Thank you for the opportunity to work on this technical assignment. The testing tools and frameworks I selected are Node.JS, WebdriverIO and Mocha, which I found fun and exciting to work with.
 
-I am traveling from Philadelphia to San Francisco with a stop in Denver to test Google Maps navigation feature. Tests are implemented using the Page Object Model with a Page class and GoogleMapsPage class. I'm also using the wdio-webdriver-server package to test cross browser with both Chrome and Firefox.
+Google Maps Navigation Testing
+
+      1. Traveling from Philadelphia to San Francisco with a stop in Denver
+      2. Tests are implemented using the Page Object Model with a Page class and GoogleMapsPage class
+      3. wdio-webdriver-server package used to test cross browser with both Chrome and Firefox
+      4. Chrome and Firefox both tested on MacOs. Firefox also tested on Ubuntu Dekstop
+      6. Video and spec reporters used for recording test sessions and reporting results to the console
 
 The following assertions are made:
 
@@ -67,6 +73,20 @@ Execute with Firefox by updating the package.json file as follows:
       "scripts": {
         "test": "wdio gecko.conf.js"
       },
+
+Execution with Firefox has also been tested on Ubuntu Desktop v18.04.4 LTS
+
+      ~$ sudo apt-get update
+      ~$ sudo apt-get install git
+      ~$ sudo apt-get install nodejs
+      ~$ sudo apt-get install npm
+      ~$ mkdir Wambi
+      ~$ cd Wambi
+      ~/Wambi$ git clone https://github.com/astenback/webdriverio-test.git
+      ~/Wambi$ cd webdriverio-test
+      ~/Wambi/webdriverio-test$ vi package.json // Update the scripts section as noted above
+      ~/Wambi/webdriverio-test$ npm install
+      ~/Wambi/webdriverio-test$ npm test
 
 // Some TO-DOs
 
