@@ -1,4 +1,4 @@
-Thank you for the opportunity to work on this technical assignment. The testing tools and frameworks I selected are Node.JS, WebdriverIO and Mocha, which I found fun and exciting to work with.
+The testing tools and frameworks I selected are Node.JS, WebdriverIO and Mocha, which I found fun and exciting to work with.
 
 Google Maps Navigation Testing
 
@@ -18,8 +18,8 @@ The following assertions are made:
 
 First, clone my github repo. This assumes git is installted. If not, its available in Command-line Tools for Developes on MacOs.
 
-      % mkdir Wambi
-      % cd Wambi
+      % mkdir Testing
+      % cd Testing
       % git clone https://github.com/astenback/webdriverio-test.git
 
 Next, install prerequisites:
@@ -41,7 +41,7 @@ Lastly, execute the test:
 
 Recordings of each test execution using the 'Video' reporter are avaiable in the _results_ folder.  Test reports using the 'spec' reporter are written to the console. Successful tests are report as follows:
 
-       [chrome  mac os x #0-0] Spec: /Users/alans/Wambi/webdriverio-test/test/specs/philly-to-san-fran-via-denver.js
+       [chrome  mac os x #0-0] Spec: /Users/alans/Testing/webdriverio-test/test/specs/philly-to-san-fran-via-denver.js
        [chrome  mac os x #0-0] Running: chrome on mac os x
        [chrome  mac os x #0-0] Session ID: 088196df680984e33842ec0873abdce9
        [chrome  mac os x #0-0]
@@ -80,13 +80,13 @@ Execution with Firefox has also been tested on Ubuntu Desktop v18.04.4 LTS
       ~$ sudo apt-get install git
       ~$ sudo apt-get install nodejs
       ~$ sudo apt-get install npm
-      ~$ mkdir Wambi
-      ~$ cd Wambi
-      ~/Wambi$ git clone https://github.com/astenback/webdriverio-test.git
-      ~/Wambi$ cd webdriverio-test
-      ~/Wambi/webdriverio-test$ vi package.json // Update the scripts section as noted above
-      ~/Wambi/webdriverio-test$ npm install
-      ~/Wambi/webdriverio-test$ npm test
+      ~$ mkdir Testing
+      ~$ cd Testing
+      ~/Testing$ git clone https://github.com/astenback/webdriverio-test.git
+      ~/Testing$ cd webdriverio-test
+      ~/Testing/webdriverio-test$ vi package.json // Update the scripts section as noted above
+      ~/Testing/webdriverio-test$ npm install
+      ~/Testing/webdriverio-test$ npm test
 
 // Some TO-DOs
 
