@@ -6,7 +6,7 @@ Google Maps Navigation Testing
       2. Tests are implemented using the Page Object Model with a Page class and GoogleMapsPage class
       3. wdio-webdriver-server package used to test cross browser with both Chrome and Firefox
       4. Chrome and Firefox both tested on MacOs. Firefox also tested on Ubuntu Dekstop
-      6. Video and spec reporters used for recording test sessions and reporting results to the console
+      5. Video and spec reporters used for recording test sessions and reporting results to the console
 
 The following assertions are made:
 
