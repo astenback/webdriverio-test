@@ -84,7 +84,7 @@ Define Expected Results
 */
 const expectedGoogleMapsTitle = "Google Maps";
 const expectedRouteTitle = "Philadelphia, Pennsylvania to San Francisco, California - Google Maps";
-const expectedMileage = "2,977 miles";
+const expectedMileage = "2,976 miles";
 const expectedTravelTimeWithoutTraffic = "45 h";
 
 /*
