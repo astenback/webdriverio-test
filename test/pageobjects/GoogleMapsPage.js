@@ -15,7 +15,10 @@ export default class GoogleMapsPage extends Page {
   // Getters with XPath selectors for fields
   get destination() { return $('//*[@id="sb_ifc53"]/input')}
   get startingPoint() { return $('//*[@id="sb_ifc51"]/input')}
-  get selectRoute() { return $('.section-directions-trip-title*=' + route)}
+
+  //get selectRoute() { return $('.section-directions-trip-title*=' + route)} // TO-DO Need to fix this!
+  get selectRoute() { return $('.section-directions-trip-title*=I-70 W')}
+
   get finalRoute() { return $('//*[@id="pane"]/div/div[1]/div/div/div[3]/div[2]/div/div[2]/h1[1]/span')}
   get mileage() { return $('//*[@id="pane"]/div/div[1]/div/div/div[3]/div[1]/h1/span[1]/span[2]/span')}
   get travelTimeWithoutTraffic() { return $('//*[@id="pane"]/div/div[1]/div/div/div[3]/div[2]/div/div[3]/span[2]/span')}
