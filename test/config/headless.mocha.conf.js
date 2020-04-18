@@ -147,10 +147,10 @@ exports.config = {
     //     },
     // },
     reporters: [
-	[video, {
-      		saveAllVideos: true,
-      		videoSlowdownMultiplier: 3
-    	}],
+    //  [video, {
+    //   saveAllVideos: true,
+    //   videoSlowdownMultiplier: 3
+    //  }],
         'spec',
         ['junit', {
             outputDir: './test/reports/junit-results/',
