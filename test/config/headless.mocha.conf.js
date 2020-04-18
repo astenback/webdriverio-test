@@ -1,5 +1,7 @@
 //to use debug option run `DEBUG=true followed by your .conf.js`
 const defaultTimeoutInterval  = process.env.DEBUG ? (60 * 60 * 500) : 90000;
+const video = require('wdio-video-reporter');
+
 
 exports.config = {
     //
@@ -145,6 +147,10 @@ exports.config = {
     //     },
     // },
     reporters: [
+	[video, {
+      		saveAllVideos: true,
+      		videoSlowdownMultiplier: 3
+    	}],
         'spec',
         ['junit', {
             outputDir: './test/reports/junit-results/',
