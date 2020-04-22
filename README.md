@@ -89,8 +89,4 @@ Execution with Chrome and Firefox has also been tested on Ubuntu Desktop v18.04.
 
 // Some TO-DOs
 
-1. Move Page and GoogleMapsPage classes into a pageobjects folder and import them into tests. Need to explore possibly using esm or Babel to accomplish this since export/import does not appear to be supported out-of-the-box. Right now, everything is in the single test file test/specs/philly-to-san-fran-via-denver.js
-
-2. Expand cross browser testing to Safari, IE, etc. Chrome and Firefix are tested at the moment
-
-3. Better error and wait handling. I have seen tests fail if various elements are not available more immediately, like over slow internet connections
+1. Better error and wait handling. I have seen tests fail if various elements are not available more immediately, like over slow internet connections
