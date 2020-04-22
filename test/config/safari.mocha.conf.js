@@ -11,44 +11,11 @@ exports.config = {
     ],
     maxInstances: 15,
     capabilities: [
-      //{
-      //  maxInstances: 5,
-      //  browserName: 'chrome',
-      //  'goog:chromeOptions': {
-      //    // to run chrome headless the following flags are required
-      //    // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
-      //    // args: ['--headless', '--disable-gpu'],
-      //  }
-      //},
-
       {
-      maxInstances: 5,
-      browserName: 'firefox',
-      "moz:firefoxOptions": {
-           args: ['-headless']
-      }
-     }
-
-      // {
-      //   // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-      //   // grid with only 5 Safari instances available you can make sure that not more than
-      //   // 5 instances get started at a time.
-      //   maxInstances: 5,
-      //   browserName: 'safari',
-      // },
-
-      // {
-      //   // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-      //   // grid with only 5 IE instances available you can make sure that not more than
-      //   // 5 instances get started at a time.
-      //   maxInstances: 5,
-      //   browserName: 'internet explorer',
-      //   acceptUntrustedCertificates: true,
-      //   ignoreProtectedModeSettings: true,    //only applicable to IE browser
-      //   ignoreZoomSetting: true,              //only applicable to IE browser
-      //   ensureCleanSession: true,
-      // },
-  ],
+        maxInstances: 5,
+        browserName: 'safari'
+        }
+      ],
     sync: true,
     logLevel: 'silent',               // Level of logging verbosity: silent | verbose | command | data | result | error
     deprecationWarnings: true,
