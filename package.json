@@ -4,7 +4,7 @@
   "description": "WebDriver bindings for Node.js with Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/.bin/wdio ./test/config/safari.mocha.conf.js"
+    "test": "node node_modules/.bin/wdio ./test/config/headless.mocha.conf.js"
   },
   "keywords": [
     "selenium",
