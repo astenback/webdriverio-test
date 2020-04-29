@@ -9,7 +9,7 @@ export default class Page {
   }
 
   getTitle() {
-    const title = browser.getTitle()
+    let title = browser.getTitle()
     return title
   }
 

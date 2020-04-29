@@ -9,10 +9,10 @@ exports.config = {
     exclude: [
         // './test/specs/file-to-exclude.js'
     ],
-    maxInstances: 15,
+    maxInstances: 2,
     capabilities: [
       {
-        maxInstances: 5,
+        maxInstances: 1,
         browserName: 'chrome',
         'goog:chromeOptions': {
           args: ['--headless', '--disable-gpu'],
@@ -20,7 +20,7 @@ exports.config = {
       },
 
       {
-      maxInstances: 5,
+      maxInstances: 1,
       browserName: 'firefox',
       "moz:firefoxOptions": {
            args: ['-headless']

@@ -9,10 +9,10 @@ exports.config = {
     exclude: [
         // './test/specs/file-to-exclude.js'
     ],
-    maxInstances: 15,
+    maxInstances: 1,
     capabilities: [
       {
-        maxInstances: 5,
+        maxInstances: 1,
         browserName: 'safari'
         }
       ],
