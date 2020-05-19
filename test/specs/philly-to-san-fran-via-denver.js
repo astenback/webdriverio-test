@@ -15,7 +15,7 @@ Define Expected Results
 */
 let expectedGoogleMapsTitle = "Google Maps";
 let expectedRouteTitle = "Philadelphia, Pennsylvania to San Francisco, California - Google Maps";
-let expectedMileage = "2,978 miles";
+let expectedMileage = "2,979 miles";
 let expectedTravelTimeWithoutTraffic = "45 h";
 
 /*
